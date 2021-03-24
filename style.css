@@ -25,7 +25,9 @@ html
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index:5
+    z-index:5;
+    overflow: hidden;
+    position: relative;
 
 
 }
@@ -35,8 +37,8 @@ body
 }
 .main 
 {
-    height: 27em;
-    width: 27rem;
+    height: 40em;
+    width: 40rem;
     background-color: #fff;
     border-radius: 8px;
     position: relative;
@@ -86,11 +88,12 @@ body
 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: row;
     text-align: center;
     margin-top: 2rem;
     font-size: 1.2rem;
+
 }
 .main .info h4
 {
@@ -110,27 +113,20 @@ margin-bottom: .4rem;
 }
 .img-top ,.img-bottom
 {
-    background-position:10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    z-index: 6
 
+    position: absolute;
+  
 }
 .img-top 
 
 {
-    background-image: url("images/bg-pattern-top.svg");
-    top: 0;
-    left: 0;
-
+    top: -333px;
+    left: -306px;
 }
 .img-bottom
 {
-    background-image: url("images/bg-pattern-bottom.svg");
-    right: 0;
-    top: 0;
+
+    right: -268px;
+    top: 240px;
   
 }
